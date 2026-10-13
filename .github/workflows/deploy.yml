@@ -37,6 +37,9 @@ jobs:
           cp -r .github/favicon _site/
           cp -r .github/favicon.ico _site/
           cp -r .github/logo.png _site/
+          cp -r .github/logo.webp _site/
+          cp -r .github/logo-small.webp _site/
+          cp -r .github/logo-small.png _site/
           cp -r .github/robots.txt _site/
           cp -r .github/sitemap.xml _site/
           cp -r .github/llms.txt _site/

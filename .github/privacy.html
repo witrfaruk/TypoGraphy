@@ -36,6 +36,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="manifest" href="favicon/site.webmanifest">
 
+  <link rel="preload" as="image" href="logo-small.webp" type="image/webp">
+
   <!-- 100% OFFLINE LOCAL FONTS (ZERO IP LEAKS TO GOOGLE SERVERS) -->
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="style.css">
@@ -71,7 +73,10 @@
   <header class="clean-header">
     <div class="header-container">
       <a href="index.html" class="logo-link">
-        <img src="logo.png" alt="typo Videos Logo" class="brand-logo">
+        <picture>
+          <source srcset="logo-small.webp" type="image/webp">
+          <img src="logo-small.png" alt="typo Videos Logo" class="brand-logo" width="68" height="38" decoding="async">
+        </picture>
       </a>
 
       <nav class="header-nav">
@@ -154,7 +159,10 @@
   <footer class="clean-footer">
     <div class="container footer-content">
       <div class="footer-brand">
-        <img src="logo.png" alt="typo Videos Logo" class="footer-logo">
+        <picture>
+          <source srcset="logo-small.webp" type="image/webp">
+          <img src="logo-small.png" alt="typo Videos Logo" class="footer-logo" width="68" height="38" loading="lazy" decoding="async">
+        </picture>
         <p class="footer-text">
           Autonomous Pure Kinetic Typography Engine. Built for creators who want high-retention vertical reels without manual video editing.
         </p>
@@ -192,6 +200,6 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js" defer></script>
 </body>
 </html>
