@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# User Audio inputs & Final Video outputs
+Audio/*
+!Audio/.gitkeep
+Final Video/*.mp4
+!Final Video/.gitkeep
+Pre Recorded Video/*
+!Pre Recorded Video/.gitkeep
+
+# Output directories & caches
+assets/cache/*
+!assets/cache/.gitkeep
+code/output/debug/*
+!code/output/debug/.gitkeep
+output/debug/*
+!output/debug/.gitkeep
+
+# Scratch and temp test files
+code/scratch/
+scratch/
+code/input/
+
+# OS specific files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,28 @@
+# Automated Typography Video Engine - System Configuration
+
+ollama:
+  base_url: "http://localhost:11434"
+  model: "qwen3.5:9b"
+  timeout_seconds: 90
+
+whisper:
+  model_size: "small" # Options: tiny, base, small, medium, large-v3
+  device: "auto"      # auto, cuda, cpu
+  compute_type: "auto"
+  vad_filter: true
+
+rendering:
+  use_nvenc: true     # NVIDIA GPU hardware encoding
+  fps: 60
+  preset: "p6"
+  crf: 19
+
+assets:
+  pexels_api_key: "AdyvCOGIbv1ybCBHnzSYHKyR9K4r5gW4YlT2aAkmy4H8smqqTLGWWfZD"
+  prefer_local: true
+  download_cache: true
+
+typography:
+  default_font: "Montserrat"
+  secondary_font: "Outfit"
+  fallback_font: "Arial"

@@ -1,0 +1,62 @@
+{
+  "profile_version": "1.0",
+  "name": "Kinetic Typography High-Impact Distilled",
+  "description": "Automated distillation from 29 reference videos in TypoGraphy Edit",
+  "canvas": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 60,
+    "aspect_ratio": "9:16"
+  },
+  "typography": {
+    "primary_font": "Anthropic",
+    "secondary_font": "Nunito",
+    "fallback_font": "Arial",
+    "base_font_size": 76,
+    "emphasis_font_size": 94,
+    "default_color": "#FFFFFF",
+    "highlight_colors": [
+      "#FFE600",
+      "#FF4D4D",
+      "#00FFB2",
+      "#00E5FF",
+      "#FF007F"
+    ],
+    "stroke_width": 5,
+    "stroke_color": "#000000",
+    "shadow_depth": 4,
+    "shadow_color": "#000000CC",
+    "box_background": null,
+    "position": {
+      "x_alignment": "center",
+      "y_position_percentage": 54.0,
+      "max_width_percentage": 85.0
+    },
+    "animation": {
+      "reveal_mode": "word_by_word_pop",
+      "pop_scale": 1.18,
+      "fade_duration_ms": 45,
+      "max_words_per_screen": 4
+    }
+  },
+  "visual_rhythm": {
+    "target_scene_duration_range": [
+      1.32,
+      3.3
+    ],
+    "image_transition_type": "slow_zoom_in",
+    "zoom_speed": 1.06,
+    "color_treatment": {
+      "vignette": true,
+      "darken_factor": 0.25,
+      "contrast": 0.64,
+      "saturation": 1.1
+    }
+  },
+  "tags": [
+    "kinetic_typography",
+    "punchy_cuts",
+    "dark_moody",
+    "high_contrast"
+  ]
+}

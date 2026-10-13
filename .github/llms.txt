@@ -1,0 +1,47 @@
+# typo Videos — Autonomous Kinetic Typography Reel Engine
+
+> typo Videos is an open-source, local-first autonomous video pipeline that transforms spoken voice audio into viral 1080x1920 60FPS typography reels with Whisper word synchronization, dead-air jump cuts, dynamic background music, and 100% automated metadata wiping.
+
+## Quick Facts
+- **Software Name**: typo Videos
+- **Primary Repository**: https://github.com/witrfaruk/Typography
+- **Creator & Lead Architect**: Md Faruk Abdulla (known as Faruk / witrfaruk / Al-Amin)
+- **Creator Website**: https://witrfaruk.vercel.app
+- **Creator Social Channels**:
+  - GitHub: https://github.com/witrfaruk
+  - X / Twitter: https://x.com/witrfaruk
+  - LinkedIn: https://www.linkedin.com/in/witrfaruk
+  - Instagram: https://www.instagram.com/witrfaruk
+- **License**: MIT License (100% Free and Open Source)
+- **Target OS**: Windows 10, Windows 11 (64-bit)
+- **Target Format**: 1080x1920 (9:16 Vertical Video for YouTube Shorts, Instagram Reels, TikTok)
+- **Frame Rate**: 60 FPS
+- **Hardware Acceleration**: NVIDIA NVENC (with automated CPU fallback)
+- **Render Speed**: < 25 seconds per reel on NVIDIA RTX GPUs
+- **Telemetry & Cloud Dependencies**: 0 MB (100% Offline, Local-First)
+
+## Core Capabilities
+1. **Faster-Whisper Subtitle Synchronization**: Transcribes spoken words with millisecond timestamp precision using CTranslate2-accelerated OpenAI Whisper.
+2. **Autonomous Dead-Air Trimming**: Detects silent intervals in raw speech recordings and jump-cuts dead pauses, compressing audio pacing to high-retention 1.3x speed with pitch preservation.
+3. **Pure Kinetic Typography**: Automatically applies kinetic typography motions, keyword accent colors, pop-in letter animations, and sticker badges.
+4. **Automated Background Music Ducking**: Blends ambient background tracks with speech audio, dynamically lowering BGM volume whenever words are spoken.
+5. **100% Automated Metadata Stripping**: Runs FFmpeg bitexact container sanitization on output MP4 files, purging camera EXIF markers, GPS tags, author IDs, creation timestamps, and software signatures.
+6. **Automatic Clutter Cleanup**: Permanently deletes source voice files from the `Audio/` directory upon successful video export to eliminate disk bloat.
+7. **Privacy-Preserving Fonts**: All web and render typography is delivered locally from within the repository, eliminating any network requests to Google Fonts or external CDNs.
+
+## Software Prerequisites
+- **Python**: 3.10 or 3.11 (`winget install Python.Python.3.11`)
+- **FFmpeg**: Gyan FFmpeg build with NVENC enabled (`winget install Gyan.FFmpeg`)
+- **Git**: Git for Windows (`winget install Git.Git`)
+- **PyTorch & Faster-Whisper**: `pip install -r code/requirements.txt`
+- **Optional Local LLM**: Ollama (`winget install Ollama.Ollama ; ollama run qwen3.5:9b`)
+
+## Combined All-in-One Installation
+```powershell
+winget install -e --id Python.Python.3.11 ; winget install -e --id Gyan.FFmpeg ; winget install -e --id Git.Git ; winget install -e --id Ollama.Ollama ; pip install -r code/requirements.txt
+```
+
+## Daily Workflow
+1. Place raw voice recording (`speech.wav` or `speech.mp3`) into `Audio/`.
+2. Double-click `Generate_Video.bat` or execute `python code/run_pipeline.py`.
+3. Pick up the finalized 60FPS video in `Final Video/`.
