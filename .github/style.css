@@ -193,6 +193,14 @@ body {
   background-color: #B8E600;
 }
 
+.btn-yellow {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}
+.btn-yellow:hover {
+  background-color: #E6A800;
+}
+
 .btn-kofi {
   background-color: var(--color-kofi);
   color: var(--color-white);
@@ -631,6 +639,46 @@ body {
 .section-subtitle {
   font-size: 16px;
   color: #555555;
+}
+
+/* DIRECT ZIP DOWNLOAD CALLOUT */
+.direct-zip-banner {
+  background-color: var(--color-white);
+  border: var(--border-mega);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 860px;
+  margin: 0 auto 24px;
+}
+
+.zip-banner-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.zip-banner-icon {
+  font-size: 30px;
+}
+
+.zip-banner-title {
+  font-family: var(--font-heading);
+  font-size: 17px;
+  font-weight: 900;
+  color: var(--color-black);
+  margin-bottom: 2px;
+}
+
+.zip-banner-desc {
+  font-size: 13.5px;
+  color: #555555;
+  margin: 0;
 }
 
 /* ==========================================================
